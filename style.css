@@ -147,7 +147,6 @@ footer{
 .edit-hover input{
     color: white;
     margin:10px 15px;
-    border: 2px solid rgb(180, 185, 192);
     background:rgb(82, 131, 206); 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.6em;
@@ -161,4 +160,32 @@ footer{
 .edit-hover input::placeholder{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header input:focus{
+    border: none;
+    background-color:rgb(255, 255, 255); 
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.container-head-hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-hide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hide-checkbox{
+    margin: 0;
+    width: 50px;
+    margin-right: 100px;
 }

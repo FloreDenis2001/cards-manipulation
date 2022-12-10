@@ -2,6 +2,8 @@ let submitButton=document.querySelector('.submit-invite');
 let sectionCards=document.querySelector('.cards');
 let containerCard=document.querySelector('.card');
 let inputInvites=document.querySelector('.input-invite');
+let hideCheckbox=document.querySelector('.container-hide');
+
 
 
 function attachCard(text){
@@ -55,6 +57,26 @@ submitButton.addEventListener("click",(e)=>{
     }
 })
 
+hideCheckbox.addEventListener("click",(e)=>{
+   let obj=e.target;
+   let auxSection=sectionCards;
+   if(obj.classList.contains("hide-checkbox")){
+    if(obj.checked===true){
+    for(let i=0;i<sectionCards.childElementCount;i++){
+         if(!(sectionCards.children[i].classList.contains("border-animation"))){
+           sectionCards.children[i].style.display='none';
+         }
+    }
+    }else if(obj.checked===false){
+        for(let i=0;i<sectionCards.childElementCount;i++){
+              sectionCards.children[i].style.display='flex';
+            }
+       }
+    }
+
+    
+})
+
 sectionCards.addEventListener("click",(e)=>{
     let obj=e.target;
     if(obj.classList.contains("btn-remove")){
@@ -78,12 +100,14 @@ sectionCards.addEventListener("click",(e)=>{
         container.removeChild(container.firstElementChild);
         let containerChange=editInputCreate();
         let inputContainerChange=containerChange.firstElementChild;
-        inputContainerChange.placeholder=title.textContent;
+        inputContainerChange.value=title.textContent;
         container.insertBefore(containerChange,container.firstElementChild);
-    
+        
          obj.classList.add("save-btn");
          obj.textContent="Save";
          obj.classList.remove("btn-edit");
+
+        inputContainerChange.focus();
 
     }else if(obj.classList.contains("save-btn")){
 
