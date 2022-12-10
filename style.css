@@ -1,0 +1,164 @@
+
+body{
+    margin:0;
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+
+input[type=text]{
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 93%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+
+}
+
+.invite-some{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    padding: 5px 2px;
+    border: 2px solid rgb(80, 79, 79);
+    border-radius:2px;
+    background-color: white;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: #032135;
+}
+
+input[type=submit]{
+    width: 70px;
+    height: 30px;
+    background-color: aqua;
+    color: aliceblue;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius:3px;
+}
+main{
+    padding: 1px;
+    background-color: rgb(55, 68, 104);
+    height: 80vh;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(82, 131, 206);
+    line-height: 1.6;
+    width: 15%;
+    height:180px;
+    border-radius: 5px;
+    box-shadow: 7px 10px 17px 1px  #032135;
+    margin-left: 50px;
+   
+}
+
+.input-checkbox{
+   margin-left: 10px;
+   width: 12px;
+   height: 12px;
+}
+
+
+
+.card-input label{
+   font-size: 1.1em;
+   color: rgb(255, 255, 255);
+}
+.card-input{
+    margin:10px 15px;
+}
+
+.buttons{
+    margin: 10px 15px;
+}
+
+.btn-edit,.btn-remove,.save-btn{
+   text-align: center;
+   width: 70px;
+   height: 30px;
+   color: white;
+   font-size: 15px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border:none;
+   border-radius: 3px;
+   margin-left: 5px;
+
+}
+
+.btn-edit{
+    background-color: rgb(190, 190, 28);
+}
+.btn-remove{
+    background-color: red;
+}
+.card h3{
+    margin:10px 15px;
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.main-head{
+    color: white;
+    margin: 10px 50px;
+   font-size: 2.5em;  
+}
+
+footer{
+    background-color: #032135;
+    padding: 1px;
+    color: white;
+    text-align: center;
+}
+
+.border-animation{
+    border-bottom: 5px solid white;
+}
+
+
+.edit-hover input:focus{
+    border: none;
+    background-color:rgb(82, 131, 206); 
+    border: 2px solid rgb(82, 131, 206);
+    outline: none;
+}
+.edit-hover input{
+    color: white;
+    margin:10px 15px;
+    border: 2px solid rgb(180, 185, 192);
+    background:rgb(82, 131, 206); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    width: 150px;
+    height: 30px;
+}
+.save-btn{
+    background-color: greenyellow;
+}
+
+.edit-hover input::placeholder{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
